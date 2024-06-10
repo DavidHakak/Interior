@@ -1,0 +1,683 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:where(.css-dev-only-do-not-override-15rg2km).ant-switch.ant-switch-checked {
+  background: #60a5fa;
+}
+
+.bottom-radius-full-w {
+  border-bottom-left-radius: 100% 150px;
+  border-bottom-right-radius: 100% 150px;
+}
+
+.top-radius-full-w {
+  border-top-left-radius: 100% 150px;
+  border-top-right-radius: 100% 150px;
+}
+
+.scroll-container {
+  /* overflow-x: hidden; */
+  white-space: nowrap;
+  display: flex;
+  /* Use flex container */
+  animation: scrollAnimation 10s linear infinite;
+  /* Adjust the duration as needed */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.divider.h-1 {
+  border: 1px solid #a39951;
+}
+
+.min-width-right {
+  min-width: 400px;
+}
+
+.homepage-grid .images-carousel img {
+  width: 100%;
+  height: 188px !important;
+  object-fit: cover !important;
+}
+
+.max-w-1\/4.mt-6.flex.flex-col {
+  max-width: 800px;
+}
+
+/* 
+.slick-slide {
+  height: 100% !important;
+}
+
+
+.slick-center{
+  height: 120% !important;
+} */
+
+
+img.relative {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+ul.slick-dots.slick-dots-bottom {
+  bottom: -7px;
+}
+
+img.rounded-x.w-24 {
+  border-radius: 38px !important;
+}
+
+:where(.css-dev-only-do-not-override-15rg2km).ant-carousel .slick-dots li.slick-active button {
+  background: #5176b4;
+}
+
+
+
+.play-btn-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  position: absolute;
+  bottom: 14px;
+  right: 11px;
+}
+
+.static {
+  position: static !important;
+}
+
+.stripe-button-el {
+  display: inline-block;
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.stripe-button-el:hover {
+  background-color: yellow;
+  color: white;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg-none-tablet {
+    background: none;
+  }
+}
+
+
+
+
+/* auction-tabs */
+
+.auction-tabs .ant-tabs-nav-list {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.auction-tabs .ant-tabs-tab {
+  font-size: 32px;
+  opacity: 0.5;
+  margin: 0px;
+}
+
+.auction-tabs .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+.auction-tabs .ant-tabs-tab:hover,
+.auction-tabs .ant-tabs-tab:focus {
+  color: black !important;
+  /* Keep the text color black on hover */
+  opacity: 0.5;
+  /* Maintain the same opacity on hover */
+}
+
+.auction-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: black !important;
+  font-weight: 600 !important;
+
+}
+
+.auction-tabs .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+.auction-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  opacity: 1 !important;
+  color: black !important;
+}
+
+/* If you want to remove the bottom border of the active tab */
+.auction-tabs .ant-tabs-tab.ant-tabs-tab-active::before {
+  content: none;
+}
+
+.ant-tabs-nav-wrap {
+  border-bottom: 1px solid #a8adc583;
+  padding-bottom: 24px;
+}
+
+
+.ant-tabs-tab-btn {
+  color: #26326E;
+  font-size: 20px;
+}
+
+.ant-tabs-tab-active.ant-tabs-tab-btn {
+  color: #26326E;
+  font-weight: 500 !important;
+}
+
+.tow-tabs .ant-tabs-nav-list div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.three-tabs .ant-tabs-nav-list div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.tow-tabs .ant-tabs-tab-btn,
+.three-tabs .ant-tabs-tab-btn {
+  min-width: 100%;
+}
+
+.tow-tabs .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn,
+.three-tabs .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn {
+  background: #ECEEF5;
+  margin: 8px 16px;
+  border-radius: 16px;
+}
+
+
+/* antd general form */
+
+.generic-form :where(.css-dev-only-do-not-override-15rg2km).ant-input-group .ant-input-group-addon {
+  background: #f4f4f4;
+  border: none;
+  height: 48px;
+}
+
+.generic-form .ant-select-selector {
+  background: #f4f4f4;
+  border: none;
+  border-right: 1px solid #eceef5;
+  height: 48px;
+}
+
+.generic-form .custom-label {
+  height: 20px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+  color: #000;
+}
+
+.generic-form .ant-input,
+.generic-form .ant-input-affix-wrapper {
+  border-radius: 6px;
+  border: 1px solid #eceef5;
+}
+
+.generic-form .ant-upload {
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px dashed #d9d9d9;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.generic-form .anticon-upload {
+  display: none;
+}
+
+.generic-form .ant-upload .ant-btn {
+  position: relative;
+  padding-left: 28px;
+}
+
+.generic-form .ant-upload .ant-btn::before {
+  content: "";
+  /* Add your custom icon here, e.g., using a background image */
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 16px;
+  /* Icon size */
+  width: 16px;
+  /* Icon size */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.generic-form .ant-form-item-row {
+  height: 78px;
+  display: flex !important;
+  flex-direction: column;
+  margin-bottom: 0px !important;
+}
+
+.generic-form .ant-input {
+  height: 48px;
+  background: #f4f4f4;
+  border: none !important;
+  border-radius: 4px !important;
+}
+
+.generic-form .ant-form-item-label {
+  display: flex;
+  justify-content: start;
+}
+
+.custom-upload-container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-uploader .ant-upload {
+  border: 1px dashed #d9d9d9;
+  padding: 8px;
+}
+
+.custom-upload-trigger {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.currency-input {
+  border-right: none;
+  text-align: right;
+}
+
+.amount-input {
+  border-left: none;
+}
+
+/* grid-donations */
+
+.grid-donations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, max-content));
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .grid-donations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-donations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* popup modal */
+
+
+
+/*
+.ant-modal-content {
+  width: fit-content !important;
+  width: 700px !important;
+} */
+
+/* generic-modal */
+.generic-modal .ant-modal {
+  width: 700px !important;
+}
+
+
+
+
+@media screen and (max-width: 1020px) {
+
+
+  .ant-modal {
+    min-width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    top: 0px !important;
+  }
+
+  .ant-modal-content {
+    width: 100% !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    border-radius: 32px 32px 0px 0px !important;
+    max-height: 70% !important;
+    overflow-y: scroll !important;
+  }
+}
+
+/* progress
+
+/* For Webkit browsers like Chrome and Safari */
+progress[value]::-webkit-progress-value {
+  background-color: white;
+}
+
+/* For Firefox */
+progress[value]::-moz-progress-bar {
+  background-color: white;
+}
+
+/* For Internet Explorer */
+progress[value] {
+  color: #ffc200;
+}
+
+.progress[value]::-webkit-progress-value {
+  background-color: #ffc200;
+}
+
+.progress[value]::-moz-progress-bar {
+  background-color: #ffc200;
+}
+
+/* loader */
+
+.loader-campaigns {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 0.3s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* checkbox input */
+
+/* Stripe Checkout */
+
+.StripeCheckout {
+  background: black !important;
+  height: 56px !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.StripeCheckout span {
+  background: black !important;
+  box-shadow: none !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+}
+
+/* ant-dropdown */
+
+.ant-dropdown {
+  z-index: 9999 !important;
+}
+
+/* category-tag */
+
+.category-tag {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  margin: 0.25rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+/* antd menu */
+.ant-menu .ant-menu-root .ant-menu-inline .ant-menu-light .css-dev-only-do-not-override-kghr11 {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+}
+
+/* .ant-menu {
+  background: none !important;
+}
+
+.ant-menu-item {
+  background: white !important;
+  height: fit-content !important;
+  padding: 0px !important;
+  padding-inline: 0px !important;
+  background: none !important;
+}
+
+.ant-menu-light .ant-menu-item-selected,
+.ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title {
+  color: #000 !important;
+}
+
+.ant-menu .ant-menu-item {
+  cursor: auto;
+}
+
+.ant-menu-light.ant-menu-root.ant-menu-inline {
+  border-right: none !important;
+}
+
+.ant-menu-submenu-title {
+  padding: 25px 0px !important;
+  border-bottom: 1px solid #000 !important;
+  border-radius: 0px !important;
+}
+
+.ant-menu-submenu-active:hover {
+  background: none !important;
+}
+
+.ant-menu-title-content {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+} */
+
+
+/* scrollbar */
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: black #f1f1f1;
+}
+
+/* antd general table */
+
+.ant-table-content {
+  padding: 16px 24px !important;
+}
+
+.table-settings .ant-table-cell {
+  background: none !important;
+  border-bottom: none !important;
+  padding: 0px !important;
+}
+
+.ant-table-row .ant-table-row-level-0 {
+  background: red !important;
+}
+
+/* antd slider  */
+
+.ant-slider .ant-slider-rail {
+  background: #fff3cc !important;
+}
+
+.ant-slider .ant-slider-track {
+  background: #ffc200 !important;
+}
+
+
+.images-carousel img {
+  height: revert-layer !important;
+}
+
+
+/* slick slider  */
+
+
+.slick-slide>div {
+  padding: 0 5px;
+}
+
+.slick-dots {
+  visibility: hidden !important;
+}
+
+.slick-auction .slick-dots {
+  visibility: visible !important;
+}
+
+.slick-auction .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slick-auction .slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.slick-auction .items-end-importent {
+  display: flex !important;
+  align-items: flex-end !important;
+}
+
+.slick-auction .slick-center {
+  min-height: 150px !important;
+  max-height: 150px !important;
+  min-width: 200px !important;
+  max-width: 200px !important;
+}
+
+.slick-auction .slick-center div {
+  min-height: 150px !important;
+  max-height: 150px !important;
+}
+
+.slick-auction div .items-end-importent {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.slick-auction .slick-center div .items-end-importent .slick-image {
+  min-height: 150px !important;
+  max-height: 150px !important;
+  min-width: 200px !important;
+  max-width: 200px !important;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+  .slick-auction .slick-center {
+    min-height: 100px !important;
+    max-height: 100px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+  }
+
+  .slick-auction .slick-center div .items-end-importent .slick-image {
+    min-height: 100px !important;
+    max-height: 100px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+  }
+}
+
+/* .slick-auction .number-input-none {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+} */
+
+
+
+/* @media screen and (max-width: 800px) {
+  .slick-center {
+    max-width: 100px !important;
+    margin: 0px 10px;
+  }
+
+  .slick-slide {
+    max-width: 100px !important;
+    width: 100px !important;
+  }
+} */
