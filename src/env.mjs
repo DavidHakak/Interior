@@ -16,7 +16,6 @@ export const env = createEnv({
    */
   server: {
     DATABASE_URL: z.string().url(),
-    DIRECT_DATABASE_URL: z.string().url(),
     NODE_ENV: z.enum(["development", "test", "production"]),
     NEXTAUTH_SECRET: z.string().min(1),
     NEXTAUTH_URL: z.preprocess(
@@ -32,7 +31,6 @@ export const env = createEnv({
     PROJECT_ID: z.string(),
     CLIENT_EMAIL: z.string(),
     PRIVATE_KEY: z.string(),
-    LEAN_SERVER_URL: z.string().url(),
   },
 
   /**
@@ -82,7 +80,5 @@ export const env = createEnv({
     CLIENT_EMAIL: process.env.CLIENT_EMAIL,
     PRIVATE_KEY: process.env.PRIVATE_KEY,
     NEXT_PUBLIC_STOREAGE_BASE_URL: process.env.NEXT_PUBLIC_STOREAGE_BASE_URL,
-    DIRECT_DATABASE_URL: process.env.DIRECT_DATABASE_URL,
-    LEAN_SERVER_URL: process.env.LEAN_SERVER_URL,
   },
 });

@@ -10,6 +10,7 @@ export const panameraFont = localFont({
   display: "swap",
 });
 
-export default function Fonts() {
-  return <>interFont panameraFont</>;
-}
+export const notoSansFont = localFont({
+  src: "./NotoSansHebrew-VariableFont_wdth,wght.ttf",
+  display: "swap",
+});

@@ -1,6 +1,3 @@
-import constants from "~/common/constants";
-import { RealTimeAuction } from "~/services/firebase/real-time/auction";
-
 export const stripHtml = (html: string) => {
   const tmp = document.createElement("DIV");
   tmp.innerHTML = html;

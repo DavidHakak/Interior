@@ -9,6 +9,7 @@ import { Elements, PaymentElement } from "@stripe/react-stripe-js";
 import { env } from "~/env.mjs";
 import { StripeElementsOptions, loadStripe } from "@stripe/stripe-js";
 import Head from "next/head";
+import { notoSansFont } from "./fonts";
 
 const stripePromise = loadStripe(env.NEXT_PUBLIC_STRIPE_API_KEY);
 
@@ -29,7 +30,14 @@ const MyApp: AppType<{ session: Session | null }> = ({
           <meta name="description" content="1234567890" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Component {...pageProps} className={cn("bg-white")} />
+        <main
+          className={cn(
+            "w-full bg-white font-medium text-[#171E42]",
+            notoSansFont.className
+          )}
+        >
+          <Component {...pageProps} className={cn("bg-white")} />
+        </main>
       </Elements>
     </SessionProvider>
   );
